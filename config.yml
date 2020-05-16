@@ -7,10 +7,9 @@ services:
 
 steps:
   update:
-    - apt update
-    - bundle exec rubycritic --path ./analysis --minimum-score 80 --no-browser
+    - apt-get update
   jq:
-    - apt install jq
+    - apt-get install jq
 
 
 environment:
