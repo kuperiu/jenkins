@@ -1,5 +1,5 @@
 config:
-  dockerfile: .woloxci/Dockerfile
+  image: ubuntu:18.04
   project_name: some-rails-project
 
 services:
