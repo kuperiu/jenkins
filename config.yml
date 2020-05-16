@@ -7,9 +7,9 @@ services:
 
 steps:
   update:
-    - sudo apt-get update
+    - ls -la
   jq:
-    - sudo apt-get install jq
+    - echo "crnvoirenmvoiemrvopi"
 
 
 environment:
