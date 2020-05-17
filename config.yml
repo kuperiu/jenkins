@@ -10,6 +10,11 @@ steps:
     image: ubuntu:18.04
     commands:
       - ls -la
+      - echo "help"
+  aws:
+    image: amazon/aws-cli
+    commands:
+      - aws ec2 describe-tags
 
 
 environment:
