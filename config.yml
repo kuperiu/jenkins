@@ -7,8 +7,7 @@ services:
 
 steps:
   update:
-    commands:
-      - ls -la
+    - ls -la
 
 
 environment:
