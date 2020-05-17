@@ -7,7 +7,6 @@ services:
 
 steps:
   update:
-    image: ubuntu:18.04
     commands:
       - ls -la
 
