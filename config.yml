@@ -7,9 +7,9 @@ services:
 
 steps:
   update:
-    - ls -la
-  jq:
-    - echo "crnvoirenmvoiemrvopi"
+    image: ubuntu:18.04
+    commands:
+      - ls -la
 
 
 environment:
