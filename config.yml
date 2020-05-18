@@ -13,11 +13,8 @@ secrets:
 
 stages:
   job_a:
-    - update:
-        image: ubuntu:18.04
-        commands:
-          - ls -la
-          - echo "help"
+    update:
+      image: ubuntu
 
     
 environment:
