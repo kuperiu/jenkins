@@ -14,7 +14,7 @@ steps:
   aws:
     image: amazon/aws-cli
     commands:
-      - echo "aws"
+      - aws ec2 describe-tags
 
 
 environment:
