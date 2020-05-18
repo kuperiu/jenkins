@@ -11,9 +11,10 @@ secrets:
     path: kv/dev
     key: env
 
+
 stages:
-  job_a:
-    update:
+  - job_a:
+    - update:
       image: ubuntu
 
     
