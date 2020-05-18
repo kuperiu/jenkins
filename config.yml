@@ -5,11 +5,7 @@ config:
 services:
   - mssql
 
-secrets:
-  my_secret:
-    service: test-lior2
-    path: kv/dev
-    key: env
+
 
 
 steps:
@@ -27,6 +23,7 @@ steps:
     commands:
       - echo "###########"
       - echo $my_secret
+
 
 environment:
   RAILS_ENV: test
