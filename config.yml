@@ -10,7 +10,6 @@ secrets:
     service: test-lior2
     path: kv/dev
     key: env
-    
 
 
 steps:
@@ -23,11 +22,11 @@ steps:
     image: amazon/aws-cli
     commands:
       - aws ec2 describe-tags
-  aws:
+  vault:
     image: ubuntu:18.04
     commands:
       - echo "###########"
-      - echo $SECRET
+      - echo $my_secret
 
 environment:
   RAILS_ENV: test
