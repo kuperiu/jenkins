@@ -5,6 +5,14 @@ config:
 services:
   - mssql
 
+secrets:
+  my_secret:
+    service: test-lior2
+    path: kv/dev
+    key: env
+    
+
+
 steps:
   update:
     image: ubuntu:18.04
