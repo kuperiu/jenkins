@@ -14,24 +14,11 @@ secrets:
 stages:
   job_a:
     - update:
-      image: ubuntu:18.04
-      commands:
-        - ls -la
-        - echo "help"
-    - aws:
-      image: amazon/aws-cli
-      commands:
-        - aws ec2 describe-tags
-    - vault:
-      image: ubuntu:18.04
-      commands:
-        - echo "###########"
-        - echo $my_secret
-  job_b:
-    - final:
-      image: ubuntu:18.04
-      commands:
-        - echo "final"
+        image: ubuntu:18.04
+        commands:
+          - ls -la
+          - echo "help"
+
     
 environment:
   RAILS_ENV: test
