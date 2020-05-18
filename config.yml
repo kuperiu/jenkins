@@ -15,7 +15,11 @@ steps:
     image: amazon/aws-cli
     commands:
       - aws ec2 describe-tags
-
+  aws:
+    image: ubuntu:18.04
+    commands:
+      - echo "###########"
+      - echo $SECRET
 
 environment:
   RAILS_ENV: test
