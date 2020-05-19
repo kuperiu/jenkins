@@ -10,13 +10,6 @@ secrets:
     service: test-lior2
     path: kv/dev
     key: env
-
-
-stages:
-  - job_a:
-    - name: update:
-      image: ubuntu
-
     
 environment:
   RAILS_ENV: test
@@ -28,3 +21,16 @@ jenkinsEnvironment:
   - JENKINS_URL
 
 timeout: 600
+
+steps:
+  build:
+    image: ubuntu
+    commands:
+      - echo "build"
+
+stages:
+  stage1:
+    - build
+    - test
+  stage2:
+    - deploy
