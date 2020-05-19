@@ -1,19 +1,8 @@
-node {
-  stage('CI') {
-    doDynamicParallelSteps()
-  }
-}
+@Library('wolox-ci') _
 
-def doDynamicParallelSteps(){
-  tests = [:]
-  for (f in ["Branch_1", "Branch_2", "Branch_3"]) {
-    tests["${f}"] = {
-      node {
-        stage("${f}") {
-          echo f
-        }
-      }
-    }
-  }
-  parallel tests
+node {
+
+  checkout scm
+
+  woloxCi('config.yml');
 }
