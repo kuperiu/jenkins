@@ -25,15 +25,15 @@ steps:
   build:
     image: ubuntu:18.04
     commands:
-      - echo "build"
+      - echo "build123"
   test:
     image: ubuntu:18.04
     commands:
-      - echo "test"
+      - echo "test123"
   deploy:
     image: ubuntu:18.04
     commands:
-      - echo "deploy"
+      - echo "deploy123"
 
           
 stages:
