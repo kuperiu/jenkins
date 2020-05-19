@@ -30,7 +30,12 @@ steps:
     image: ubuntu
     commands:
       - echo "test"
+  deploy:
+    image: ubuntu
+    commands:
+      - echo "deploy"
 
+          
 stages:
   stage1:
     - build
