@@ -23,15 +23,15 @@ timeout: 600
 
 steps:
   build:
-    image: ubuntu
+    image: ubuntu:18.04
     commands:
       - echo "build"
   test:
-    image: ubuntu
+    image: ubuntu:18.04
     commands:
       - echo "test"
   deploy:
-    image: ubuntu
+    image: ubuntu:18.04
     commands:
       - echo "deploy"
 
