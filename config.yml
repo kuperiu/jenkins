@@ -2,8 +2,7 @@ config:
   image: ubuntu:18.04
   project_name: some-rails-project
 
-services:
-  - mssql
+
 
 secrets:
   my_secret:
@@ -31,7 +30,7 @@ steps:
     image: ubuntu
     commands:
       - echo "test"
-      
+
 stages:
   stage1:
     - build
