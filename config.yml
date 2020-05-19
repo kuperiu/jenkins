@@ -27,7 +27,11 @@ steps:
     image: ubuntu
     commands:
       - echo "build"
-
+  test:
+    image: ubuntu
+    commands:
+      - echo "test"
+      
 stages:
   stage1:
     - build
