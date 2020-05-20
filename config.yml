@@ -26,6 +26,7 @@ steps:
   build:
     image: golang:1.12
     commands:
+      - env
       - go build
   test:
     image: golang:1.12
