@@ -23,14 +23,13 @@ timeout: 600
 
 steps:
   build:
-    image: ubuntu:18.04
+    image: go:1.12
     commands:
-      - echo "build123"
-      - echo "another build"
+      - go build
   test:
-    image: ubuntu:18.04
+    image: go:1.12
     commands:
-      - echo $my_secret
+      - ./test.sh
   deploy:
     image: amazon/aws-cli
     commands:
