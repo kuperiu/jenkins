@@ -30,7 +30,6 @@ steps:
   test:
     image: golang:1.12
     commands:
-      - go mod download
       - ./test.sh
   deploy:
     image: amazon/aws-cli
