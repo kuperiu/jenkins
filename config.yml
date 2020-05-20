@@ -15,7 +15,7 @@ environment:
   GIT_COMMITTER_NAME: a
   GIT_COMMITTER_EMAIL: b
   LANG: C.UTF-8
-  GOCACHE: /.cache/test
+  GOCACHE: "/home/ubuntu/team_a/team_a/workspace/jenkins_master@2/test"
 
 jenkinsEnvironment:
   - JENKINS_URL
