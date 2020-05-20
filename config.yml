@@ -30,11 +30,11 @@ steps:
   test:
     image: ubuntu:18.04
     commands:
-      - echo "test123"
+      - echo $my_secret
   deploy:
-    image: ubuntu:18.04
+    image: amazon/aws-cli
     commands:
-      - echo "deploy123"
+      - aws ec2 describe-tags
 
           
 stages:
