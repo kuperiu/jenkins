@@ -23,11 +23,11 @@ timeout: 600
 
 steps:
   build:
-    image: go:1.12
+    image: golang:1.12
     commands:
       - go build
   test:
-    image: go:1.12
+    image: golang:1.12
     commands:
       - ./test.sh
   deploy:
