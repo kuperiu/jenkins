@@ -26,6 +26,7 @@ steps:
     image: ubuntu:18.04
     commands:
       - echo "build123"
+      - echo "another build"
   test:
     image: ubuntu:18.04
     commands:
