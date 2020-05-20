@@ -29,7 +29,7 @@ steps:
   test:
     image: golang:1.12
     commands:
-      - ls -la
+      - ls -la ../
   deploy:
     image: amazon/aws-cli
     commands:
