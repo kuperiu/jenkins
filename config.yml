@@ -25,11 +25,13 @@ steps:
   build:
     image: golang:1.12
     commands:
+      - env
       - go build
   test:
     image: golang:1.12
     commands:
-      - ls -la ../
+      - go mod download
+      - ./test.sh
   deploy:
     image: amazon/aws-cli
     commands:
