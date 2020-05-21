@@ -50,3 +50,5 @@ stages:
     - deploy
   finish:
     - finish
+    - when:
+        branch: master
