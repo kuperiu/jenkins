@@ -36,7 +36,7 @@ steps:
     image: amazon/aws-cli
     commands:
       - echo ${my_secret}
-      - aws s3 jenkins lior s3://jenlins-lior/
+      - aws s3 cp jenkins s3://jenlins-lior/
           
 stages:
   stage1:
