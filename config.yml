@@ -48,7 +48,5 @@ stages:
     - test
   deploy:
     - deploy
-  finish:
-    - finish
     when:
       branch: master
