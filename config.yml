@@ -47,6 +47,7 @@ stages:
     - build
     - test
   deploy:
-    - deploy
-    - when:
-        branch: master
+    steps:
+      - deploy
+    when:
+      branch: master
