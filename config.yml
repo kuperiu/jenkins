@@ -1,6 +1,6 @@
 config:
   image: ubuntu:18.04
-  project_name: some-rails-project
+  project_name: jenkins
 
 
 
@@ -12,8 +12,6 @@ secrets:
     
 environment:
   RAILS_ENV: test
-  GIT_COMMITTER_NAME: a
-  GIT_COMMITTER_EMAIL: b
   LANG: C.UTF-8
 
 
