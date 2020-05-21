@@ -23,8 +23,8 @@ timeout: 600
 steps:
   finish:
     image: ubuntu:18.04
-    -commands:
-      - echo ${my_secret}
+    commands:
+      - echo "I'm finished" 
   build:
     image: golang:1.12
     commands:
