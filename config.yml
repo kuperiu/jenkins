@@ -27,7 +27,7 @@ steps:
     image: golang:1.12
     commands:
       - go build -o jenkins
-  test:
+  build_and_test:
     image: golang:1.12
     commands:
       - go mod download
