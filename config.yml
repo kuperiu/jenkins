@@ -26,8 +26,7 @@ steps:
   build:
     image: golang:1.12
     commands:
-      - env
-      - go build
+      - go build -o jenkins
   test:
     image: golang:1.12
     commands:
@@ -37,8 +36,7 @@ steps:
     image: amazon/aws-cli
     commands:
       - echo ${my_secret}
-      - aws ec2 describe-tags
-
+      - aws s3 jenkins lior s3://jenlins-lior/
           
 stages:
   stage1:
