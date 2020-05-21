@@ -22,7 +22,7 @@ timeout: 600
 
 steps:
   finish:
-    images: ubuntu:20.04
+    images: ubuntu:18.04
     -commands:
       - echo "I'm finished" 
   build:
