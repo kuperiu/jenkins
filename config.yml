@@ -27,7 +27,7 @@ steps:
     image: golang:1.12
     commands:
       - go build -o jenkins
-  build_and_test:
+  test:
     image: golang:1.12
     commands:
       - go mod download
@@ -39,8 +39,8 @@ steps:
       - aws s3 cp jenkins s3://jenkins-lior/
           
 stages:
-  stage1:
+  build_and_test:
     - build
     - test
-  stage2:
+  deploy:
     - deploy
