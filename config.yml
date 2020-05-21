@@ -21,6 +21,10 @@ jenkinsEnvironment:
 timeout: 600
 
 steps:
+  finish:
+    images: ubuntu:20.04
+    -commands:
+      - echo "I'm finished" 
   build:
     image: golang:1.12
     commands:
@@ -44,3 +48,5 @@ stages:
     - test
   deploy:
     - deploy
+  finish:
+    - finish
