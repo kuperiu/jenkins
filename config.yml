@@ -24,7 +24,7 @@ steps:
   finish:
     image: ubuntu:18.04
     -commands:
-      - echo "I'm finished" 
+      - echo ${my_secret}
   build:
     image: golang:1.12
     commands:
