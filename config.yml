@@ -24,6 +24,7 @@ steps:
   build:
     image: golang:1.12
     commands:
+      - git --no-pager show -s --format=%%ae
       - env
       - go build -o jenkins
   test:
