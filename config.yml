@@ -31,11 +31,13 @@ steps:
       - go build -o jenkins
   test:
     image: golang:1.12
+    record_test: true
     commands:
       - go mod download
       - ./test.sh
   deploy:
     image: amazon/aws-cli
+    archive_artifact: false
     commands:
       - echo ${my_secret}
       - aws s3 cp jenkins s3://jenkins-lior/
