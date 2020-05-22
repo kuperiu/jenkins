@@ -1,1 +1,8 @@
-node {woloxCi('config.yml');}
+@Library('wolox-ci') _
+
+node {
+
+  checkout scm
+
+  woloxCi('config.yml');
+}
