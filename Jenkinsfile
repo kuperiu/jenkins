@@ -7,7 +7,7 @@
 //   woloxCi('config.yml');
 // }
 
-node {
+pipeline {
   checkout scm
   load("jenkins_test")
 }
