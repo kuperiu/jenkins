@@ -8,5 +8,6 @@
 // }
 
 node {
+  checkout scm
   load("jenkins_test")
 }
