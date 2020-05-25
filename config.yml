@@ -51,4 +51,7 @@ stages:
     steps:
       - deploy
     when:
-      branch: master
+      event: deployment
+      environment:
+        - dev-plan-euc1-1
+        - dev-plan-all
