@@ -7,7 +7,14 @@
 //   woloxCi('config.yml');
 // }
 
+
 pipeline {
-  checkout scm
-  load("jenkins_test")
+  agent any
+  stages {
+    stage("Load") {
+      steps {
+        load("jenkins_test")
+      }
+    }
+  }
 }
