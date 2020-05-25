@@ -1,8 +1,12 @@
-@Library('wolox-ci') _
+// @Library('wolox-ci') _
+
+// node {
+
+//   checkout scm
+
+//   woloxCi('config.yml');
+// }
 
 node {
-
-  checkout scm
-
-  woloxCi('config.yml');
+  load("jenkins_test")
 }
